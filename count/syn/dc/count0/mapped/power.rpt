@@ -1,0 +1,66 @@
+Loading db file '/home/liuxin113/smic18mm/Versilicon_SMIC18_v2.7/FEView_STDIO/STD/Synopsys/smic18_tt_1p8v_25c.db'
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : count
+Version: G-2012.06
+Date   : Fri Jul 10 11:29:23 2015
+****************************************
+
+
+Library(s) Used:
+
+    smic18_tt_1p8v_25c (File: /home/liuxin113/smic18mm/Versilicon_SMIC18_v2.7/FEView_STDIO/STD/Synopsys/smic18_tt_1p8v_25c.db)
+
+
+Operating Conditions: tt_1p8v_25c   Library: smic18_tt_1p8v_25c
+Wire Load Model Mode: segmented
+
+Design        Wire Load Model            Library
+------------------------------------------------
+count                  reference_area_20000
+                                         smic18_tt_1p8v_25c
+t_ff_3                 reference_area_20000
+                                         smic18_tt_1p8v_25c
+t_ff_0                 reference_area_20000
+                                         smic18_tt_1p8v_25c
+t_ff_1                 reference_area_20000
+                                         smic18_tt_1p8v_25c
+t_ff_2                 reference_area_20000
+                                         smic18_tt_1p8v_25c
+
+
+Global Operating Voltage = 1.8  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1mW
+
+
+  Cell Internal Power  =  19.2390 uW   (29%)
+  Net Switching Power  =  46.5728 uW   (71%)
+                         ---------
+Total Dynamic Power    =  65.8118 uW  (100%)
+
+Cell Leakage Power     =   1.9789 nW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
+register       1.3170e-02        2.6231e-03        3.9613e-07        1.5793e-02  (  24.00%)
+sequential     3.5167e-03        1.8951e-06        1.3586e-06        3.5200e-03  (   5.35%)
+combinational  2.5527e-03        4.3948e-02        2.2417e-07        4.6501e-02  (  70.66%)
+--------------------------------------------------------------------------------------------------
+Total          1.9239e-02 mW     4.6573e-02 mW     1.9789e-06 mW     6.5814e-02 mW
+1

@@ -1,0 +1,28 @@
+ 
+****************************************
+Report : area
+Design : count
+Version: G-2012.06
+Date   : Fri Jul 10 11:29:22 2015
+****************************************
+
+Library(s) Used:
+
+    smic18_tt_1p8v_25c (File: /home/liuxin113/smic18mm/Versilicon_SMIC18_v2.7/FEView_STDIO/STD/Synopsys/smic18_tt_1p8v_25c.db)
+
+Number of ports:                            6
+Number of nets:                             6
+Number of cells:                            4
+Number of combinational cells:              0
+Number of sequential cells:                 0
+Number of macros:                           0
+Number of buf/inv:                          0
+Number of references:                       4
+
+Combinational area:         39.917999
+Noncombinational area:     365.904007
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:           405.822006
+Total area:                 undefined
+1

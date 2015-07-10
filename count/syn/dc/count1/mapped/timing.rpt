@@ -1,0 +1,46 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : count
+Version: G-2012.06
+Date   : Fri Jul 10 11:29:43 2015
+****************************************
+
+Operating Conditions: tt_1p8v_25c   Library: smic18_tt_1p8v_25c
+Wire Load Model Mode: segmented
+
+  Startpoint: cnt_reg[0] (falling edge-triggered flip-flop clocked by clk)
+  Endpoint: cnt[0] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  count              reference_area_20000  smic18_tt_1p8v_25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (fall edge)                    5.00       5.00
+  clock network delay (ideal)              1.30       6.30
+  cnt_reg[0]/CKN (FFDNRHD2X)               0.00       6.30 f
+  cnt_reg[0]/QN (FFDNRHD2X)                0.23       6.53 f
+  U11/Z (INVHD4X)                          0.46       6.99 r
+  cnt[0] (out)                             0.00       6.99 r
+  data arrival time                                   6.99
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              0.00      10.00
+  output external delay                   -3.00       7.00
+  data required time                                  7.00
+  -----------------------------------------------------------
+  data required time                                  7.00
+  data arrival time                                  -6.99
+  -----------------------------------------------------------
+  slack (MET)                                         0.01
+
+
+1

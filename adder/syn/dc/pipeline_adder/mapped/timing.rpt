@@ -1,0 +1,46 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : fulladder4
+Version: G-2012.06
+Date   : Fri Jul 10 11:26:17 2015
+****************************************
+
+Operating Conditions: tt_1p8v_25c   Library: smic18_tt_1p8v_25c
+Wire Load Model Mode: segmented
+
+  Startpoint: cout_reg (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: cout (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fulladder4         reference_area_20000  smic18_tt_1p8v_25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              1.30       1.30
+  cout_reg/CK (FFDQHD1X)                   0.00       1.30 r
+  cout_reg/Q (FFDQHD1X)                    1.80       3.10 r
+  cout (out)                               0.00       3.10 r
+  data arrival time                                   3.10
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              1.30      11.30
+  clock uncertainty                       -0.80      10.50
+  output external delay                   -3.00       7.50
+  data required time                                  7.50
+  -----------------------------------------------------------
+  data required time                                  7.50
+  data arrival time                                  -3.10
+  -----------------------------------------------------------
+  slack (MET)                                         4.40
+
+
+1

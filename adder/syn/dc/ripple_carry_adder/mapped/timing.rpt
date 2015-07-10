@@ -1,0 +1,66 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : fulladder4
+Version: G-2012.06
+Date   : Fri Jul 10 11:25:56 2015
+****************************************
+
+Operating Conditions: tt_1p8v_25c   Library: smic18_tt_1p8v_25c
+Wire Load Model Mode: segmented
+
+  Startpoint: b[0] (input port clocked by clk)
+  Endpoint: sum[3] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fulladder4         reference_area_20000  smic18_tt_1p8v_25c
+  fulladder1_3       reference_area_20000  smic18_tt_1p8v_25c
+  fulladder1_2       reference_area_20000  smic18_tt_1p8v_25c
+  fulladder1_1       reference_area_20000  smic18_tt_1p8v_25c
+  fulladder1_0       reference_area_20000  smic18_tt_1p8v_25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              1.30       1.30
+  input external delay                     3.00       4.30 r
+  b[0] (in)                                0.00       4.30 r
+  u0/b (fulladder1_3)                      0.00       4.30 r
+  u0/U3/Z (XOR2HD1X)                       0.19       4.49 f
+  u0/U2/Z (AOI22HD1X)                      0.13       4.62 r
+  u0/U1/Z (INVHDPX)                        0.08       4.70 f
+  u0/cout (fulladder1_3)                   0.00       4.70 f
+  u1/cin (fulladder1_2)                    0.00       4.70 f
+  u1/U3/Z (AOI22HD1X)                      0.15       4.85 r
+  u1/U2/Z (INVHDPX)                        0.08       4.93 f
+  u1/cout (fulladder1_2)                   0.00       4.93 f
+  u2/cin (fulladder1_1)                    0.00       4.93 f
+  u2/U3/Z (AOI22HD1X)                      0.15       5.08 r
+  u2/U2/Z (INVHDPX)                        0.08       5.16 f
+  u2/cout (fulladder1_1)                   0.00       5.16 f
+  u3/cin (fulladder1_0)                    0.00       5.16 f
+  u3/U1/Z (XOR2HD1X)                       1.74       6.90 r
+  u3/sum (fulladder1_0)                    0.00       6.90 r
+  sum[3] (out)                             0.01       6.90 r
+  data arrival time                                   6.90
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              1.30      11.30
+  clock uncertainty                       -0.80      10.50
+  output external delay                   -3.00       7.50
+  data required time                                  7.50
+  -----------------------------------------------------------
+  data required time                                  7.50
+  data arrival time                                  -6.90
+  -----------------------------------------------------------
+  slack (MET)                                         0.60
+
+
+1

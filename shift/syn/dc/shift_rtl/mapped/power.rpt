@@ -1,0 +1,78 @@
+Loading db file '/home/liuxin113/smic18mm/Versilicon_SMIC18_v2.7/FEView_STDIO/STD/Synopsys/smic18_tt_1p8v_25c.db'
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : shift
+Version: G-2012.06
+Date   : Fri Jul 10 11:32:06 2015
+****************************************
+
+
+Library(s) Used:
+
+    smic18_tt_1p8v_25c (File: /home/liuxin113/smic18mm/Versilicon_SMIC18_v2.7/FEView_STDIO/STD/Synopsys/smic18_tt_1p8v_25c.db)
+
+
+Operating Conditions: tt_1p8v_25c   Library: smic18_tt_1p8v_25c
+Wire Load Model Mode: segmented
+
+Design        Wire Load Model            Library
+------------------------------------------------
+shift                  reference_area_20000
+                                         smic18_tt_1p8v_25c
+mux32_9                reference_area_20000
+                                         smic18_tt_1p8v_25c
+mux32_0                reference_area_20000
+                                         smic18_tt_1p8v_25c
+mux32_1                reference_area_20000
+                                         smic18_tt_1p8v_25c
+mux32_2                reference_area_20000
+                                         smic18_tt_1p8v_25c
+mux32_3                reference_area_20000
+                                         smic18_tt_1p8v_25c
+mux32_4                reference_area_20000
+                                         smic18_tt_1p8v_25c
+mux32_5                reference_area_20000
+                                         smic18_tt_1p8v_25c
+mux32_6                reference_area_20000
+                                         smic18_tt_1p8v_25c
+mux32_7                reference_area_20000
+                                         smic18_tt_1p8v_25c
+mux32_8                reference_area_20000
+                                         smic18_tt_1p8v_25c
+
+
+Global Operating Voltage = 1.8  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1mW
+
+
+  Cell Internal Power  = 283.8663 uW   (36%)
+  Net Switching Power  = 498.0299 uW   (64%)
+                         ---------
+Total Dynamic Power    = 781.8962 uW  (100%)
+
+Cell Leakage Power     =  35.1353 nW
+
+Information: report_power power group summary does not include estimated clock tree power. (PWR-789)
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
+register           0.0000            0.0000            0.0000            0.0000  (   0.00%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational      0.2839            0.4980        3.5135e-05            0.7819  ( 100.00%)
+--------------------------------------------------------------------------------------------------
+Total              0.2839 mW         0.4980 mW     3.5135e-05 mW         0.7819 mW
+1

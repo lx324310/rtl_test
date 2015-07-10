@@ -1,0 +1,10 @@
+#----------------------------------------------
+#constraintion design 
+#create virtual clock
+create_clock -period 10 -waveform {0 5} -name clk
+#input delay
+set_input_delay -max 3.0 -clock clk [all_inputs]
+set_input_delay -min 1.5 -clock clk [all_inputs]
+#output delay
+set_output_delay -max 3.0 -clock clk [all_outputs]
+set_output_delay -min 1.5 -clock clk [all_outputs]

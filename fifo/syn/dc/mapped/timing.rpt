@@ -1,0 +1,56 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : fifo
+Version: G-2012.06
+Date   : Sat Jul 11 19:31:58 2015
+****************************************
+
+Operating Conditions: tt_1p8v_25c   Library: smic18_tt_1p8v_25c
+Wire Load Model Mode: segmented
+
+  Startpoint: wr (input port clocked by clk)
+  Endpoint: mem_reg[0][0]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fifo               reference_area_20000  smic18_tt_1p8v_25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              1.30       1.30
+  input external delay                     3.00       4.30 r
+  wr (in)                                  0.00       4.30 r
+  U160/Z (INVHDPX)                         0.04       4.34 f
+  U123/Z (NOR2HD1X)                        0.33       4.66 r
+  U112/Z (INVHDPX)                         0.14       4.80 f
+  U113/Z (OAI21HD1X)                       0.23       5.03 r
+  U122/Z (NOR3B1HD1X)                      0.44       5.47 r
+  U161/Z (AND2HD1X)                        0.17       5.64 r
+  U158/Z (AND2HD1X)                        0.21       5.85 r
+  U142/Z (AND3HD1X)                        0.39       6.24 r
+  mem_reg[0][0]/E (FFEDQHDLX)              0.00       6.24 r
+  data arrival time                                   6.24
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              1.30      11.30
+  clock uncertainty                       -0.80      10.50
+  mem_reg[0][0]/CK (FFEDQHDLX)             0.00      10.50 r
+  library setup time                      -0.17      10.33
+  data required time                                 10.33
+  -----------------------------------------------------------
+  data required time                                 10.33
+  data arrival time                                  -6.24
+  -----------------------------------------------------------
+  slack (MET)                                         4.09
+
+
+1
